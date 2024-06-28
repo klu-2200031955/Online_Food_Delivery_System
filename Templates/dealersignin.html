@@ -1,0 +1,63 @@
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>|-klu-sdp_12-dealer-sign-up-form-|</title>
+    <link rel="stylesheet" href="dealersignin.css">
+    <link rel="shortcut icon" href="https://www.kluniversity.in/ieee/img/klulogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/dealersignin.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" action="{% url 'createduser' %}">
+         {% csrf_token %}
+        <div class="title">Dealer Sign Up</div>
+        <div class="input-box underline">
+          <input type="text" name="fname" placeholder="Enter your Full Name" required>
+          <div class="underline"></div>
+        </div>
+          <div class="input-box underline">
+            <input type="text" name="email" placeholder="Enter your Email" required>
+            <div class="underline"></div>
+          </div>
+          <div class="input-box underline">
+            <input type="text" name="phno" placeholder="Enter your Phone Number" required>
+            <div class="underline"></div>
+          </div>
+        <div class="input-box underline">
+            <input type="text" name="uname" placeholder="Enter your Username" required>
+            <div class="underline"></div>
+          </div>
+        <div class="input-box">
+          <input type="password" placeholder="Enter your Password" required>
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Confirm your Password" required>
+            <div class="underline"></div>
+        </div>
+        <div class="input-box button">
+          <input type="submit"  value="Next">
+        </div>
+        <center>
+          <h6>
+            <p class="text--center">I'm a member? <a href="{% url 'dealerlogin' %}">Login now</a> </p>
+          </h6>
+        </center>
+      </form>
+    </div>
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"2ef7171a795f1b46161a6ddb33002a7ff","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+  </body>
+</html>

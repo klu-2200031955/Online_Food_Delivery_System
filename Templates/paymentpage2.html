@@ -1,0 +1,86 @@
+{% load static %}
+<html lang="en">
+<head>
+    <title>Payment</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paymentpage2.css">
+     <link type="text/css" rel="stylesheet" href="{% static 'css/paymentpage2.css' %}">
+</head>
+<body>
+<div class="container">
+    <form method="post" action="{% url 'createcard' %}" onsubmit="openPopup()">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col">
+                <h3 class="title">Debit Payment</h3>
+                <div class="inputBox">
+                    <span>Cards Accepted :</span>
+                    <img src="{% static 'images/Card.jpg' %}" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Name of the Card Holder :</span>
+                    <input type="text" name="ncard" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>Debit card number :</span>
+                    <input type="text" name="nnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Expiry Date :</span>
+                        <input type="text" name="edate" placeholder="xx-xxxx">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" name="cvv" placeholder="xxxx">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+        <div class="popup" id="popup">
+            <img src="{% static 'images/404-tick.png' %}">
+            <h2>Thank You!</h2>
+            <p>Your order is placed successfully</p>
+            <a href="{% url 'customerhome' %}"><input type="button" value="OK" class="popup-button"></a>
+        </div>
+    </form>
+</div>
+<script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
+// Add an event listener to the form to open the popup when it is submitted
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();  // Prevent the form from submitting normally
+      openPopup();
+    });
+
+    // Add an event listener to the "OK" button to close the popup
+    document.getElementById('ok-button').addEventListener('click', function() {
+      closePopup();
+    });
+
+    // Automatically close the popup after a delay (e.g., 5000 milliseconds or 5 seconds)
+    setTimeout(function() {
+      closePopup();
+    }, 5000); // Adjust the delay as needed
+
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"2ef7171a795f1b46161a6ddb33002a7ff","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>

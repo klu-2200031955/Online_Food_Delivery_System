@@ -1,0 +1,80 @@
+{% load static %}
+<html lang="en">
+<head>
+    <title>Payment</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paymentpage1.css">
+     <link type="text/css" rel="stylesheet" href="{% static 'css/paymentpage1.css' %}">
+</head>
+<body>
+<div class="container">
+    <form method="post" action="{% url 'spaymentpage' %}">
+        {% csrf_token %}
+        <p align="center" style="color:red">{{msg}}</p>
+        <div class="row">
+            <div class="col">
+                <h3 class="title">billing address</h3>
+                <div class="inputBox">
+                    <span>Name :</span>
+<!--                    name = {{fname}}-->
+                    <input type="text" name="fname" value="" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+<!--                    email ={{email}}-->
+                    <input type="email" name="email" value="" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>Address :</span>
+                    <input type="text" name="address" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>City/Town :</span>
+                    <input type="text" name="city" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>State :</span>
+                    <input type="text" name="state" placeholder="">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Phone Number :</span>
+                        <input type="text" name="phno" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Pin Code :</span>
+                        <input type="text" name="pcode" placeholder="">
+                    </div>
+                </div>
+                <div><hr class="hr-text gradient" data-content="AND"></div>
+                <div class="inputBox">
+                    <span>Select Payment Method :</span>
+                    <select name="type" id="lang">
+                        <option value="select">...Select...</option>
+                        <option name="dcard" value="dcard">Debit Card</option>
+                        <option name="ccard" value="ccard">Credit Card</option>
+                        <option name="upi" value="upi">UPI</option>
+                        <option name="cod" value="cod">Cash on Delivery</option>
+                      </select>
+                </div>
+            </div>
+            
+        </div>
+        <input type="submit" value="Continue" class="submit-btn">
+    </form>
+</div>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"2ef7171a795f1b46161a6ddb33002a7ff","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+{% load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dealer Page</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+  <link type="text/css" rel="stylesheet" href="{% static 'css/delaermenu.css' %}">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="sidebar close">
+  <header>
+    <div class="image-text">
+      <span class="image">
+        <img src="https://www.kluniversity.in/ieee/img/klulogo.jpg" alt="">
+      </span>
+
+      <div class="text logo-text">
+        <span class="name">KLU</span>
+        <span class="profession">SDP-12</span>
+      </div>
+    </div>
+    <i class='bx bx-chevron-right toggle'></i>
+  </header>
+
+  <div class="menu-bar">
+    <div class="menu">
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="{% url 'dmenu' %}">
+            <i class='bx bx-home-alt icon'></i>
+            <span class="text nav-text">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">
+            <i class='bx bx-bar-chart-alt-2 icon'></i>
+            <span class="text nav-text">All Orders</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">
+            <i class='bx bx-bell icon'></i>
+            <span class="text nav-text">Notifications</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">
+            <i class='bx bx-pie-chart-alt icon'></i>
+            <span class="text nav-text">Analytics</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">
+            <i class='bx bx-wallet icon'></i>
+            <span class="text nav-text">Wallets</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="bottom-content">
+      <li class="">
+        <a href="{% url 'dealerlogin' %}">
+          <i class='bx bx-log-out icon'></i>
+          <span class="text nav-text">Logout</span>
+        </a>
+      </li>
+
+      <li class="mode">
+        <div class="sun-moon">
+          <i class='bx bx-moon icon moon'></i>
+          <i class='bx bx-sun icon sun'></i>
+        </div>
+        <span class="mode-text text">Dark mode</span>
+
+        <div class="toggle-switch">
+          <span class="switch"></span>
+        </div>
+      </li>
+
+    </div>
+  </div>
+</nav>
+
+
+<main class="content-section">
+  <section class="home">
+    <div class="text">Partner</div>
+    <div class="container">
+    <label class="switch"><input type="checkbox" id="dealer-status">
+    <div>
+
+    </div>
+    </label>
+      <span class="status-text">Offline</span>
+  </div>
+  </section>
+
+<center>
+  <section class="restaurants">
+    <div class="container" align="center">
+      <h3 align="center" style="color: green">{{msg}}</h3>
+      <br />
+        <div class="head">
+          <h4 class="status-text">Total no of items:{{count}}</h4>
+            <div>
+                <a href="{% url 'add' %}"><input type="submit"  value="+ Add Dish" class="button2" ></a>
+            </div>
+        </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <p>
+        <table align="center" border="2" width="100%" height="45%" class ="table">
+        <thead>
+            <tr bgcolor="#add8e6" align="center" style="color: white">
+              <td>Id</td>
+              <td>Name</td>
+              <td>Price</td>
+              <td>Offer</td>
+              <td>Action</td>
+            </tr>
+        </thead>
+      <tbody id="myTable">
+    {% for item in itemdata %}
+    <tr align="center">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.offer}}</td>
+        <td>
+          <a href="#">Edit</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+      </table>
+      </p>
+    </div>
+  </section>
+</center>
+</main>
+
+
+
+<!-- partial -->
+  <script type="text/javascript">
+    const body = document.querySelector("body"),
+  sidebar = body.querySelector("nav"),
+  toggle = body.querySelector(".toggle"),
+  searchBtn = body.querySelector(".search-box"),
+  modeSwitch = body.querySelector(".toggle-switch"),
+  modeText = body.querySelector(".mode-text");
+  const toggleSwitch = document.getElementById("dealer-status");
+  const statusText = document.getElementById("status-text");
+
+toggleSwitch.addEventListener("change", function () {
+  if (toggleSwitch.checked) {
+    statusText.textContent = "Online";
+    // You can send an API request to update the dealer's status to online here.
+  } else {
+    statusText.textContent = "Offline";
+    // You can send an API request to update the dealer's status to offline here.
+  }
+});
+
+toggle.addEventListener("click", () => {
+  sidebar.classList.toggle("close");
+});
+
+searchBtn.addEventListener("click", () => {
+  sidebar.classList.remove("close");
+});
+
+modeSwitch.addEventListener("click", () => {
+  body.classList.toggle("dark");
+
+  if (body.classList.contains("dark")) {
+    modeText.innerText = "Light mode";
+  } else {
+    modeText.innerText = "Dark mode";
+  }
+});
+
+
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"2ef7171a795f1b46161a6ddb33002a7ff","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+
+  </script>
+
+</body>
+</html>

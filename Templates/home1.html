@@ -1,0 +1,151 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDP-12</title>
+    <link rel="shortcut icon" href="https://www.kluniversity.in/ieee/img/klulogo.jpg" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/button.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="nav">
+            <div>
+                <p>KLU-SDP-12</p>
+            </div>
+<!--            <ul class="nav-bar">-->
+<!--                <li><a href="#">Add Restaurant</a></li>-->
+<!--                <li><a href="{% url 'customerlogin' %}">Log in</a></li>-->
+<!--                <li><a href="#">Sign up</a></li>-->
+<!--            </ul>-->
+        </div>
+        <div class="head">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/KL_University_logo.svg/330px-KL_University_logo.svg.png" alt="">
+            <h3><font color="black">Discover the best food & drinks</font></h3>
+<!--            <div class="search">-->
+<!--                <div class="search-item">-->
+<!--                    <i class="fas fa-map-marker-alt"></i>-->
+<!--                    <p>Vijayawada 520001</p>-->
+<!--                </div>-->
+<!--                <div class="search-item">-->
+<!--                    <i class="fas fa-search"></i>-->
+<!--                    <label>-->
+<!--                        <input type="text" placeholder="Search for restaurant, cuisine or a dish">-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div>
+                <a href="{% url 'getin' %}"><input type="submit"  value="Get In" class="button"></a>
+            </div>
+        </div>
+        <div class="header-image">
+            <img src="https://img.freepik.com/free-photo/top-view-frame-with-food-copy-space_23-2148247893.jpg?w=2000" alt="">
+        </div>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="section-1">
+        <div class="section-1-item">
+            <div class="items-details"><p>Order Food Online</p></div>
+            <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;,
+            " alt="">
+        </div>
+        <div class="section-1-item">
+            <div class="items-details"><p>Dining Out</p></div>
+            <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;,
+            " alt="">
+        </div>
+        <div class="section-1-item">
+            <div class="items-details"><p>Nightlife & Club</p></div>
+            <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;,
+            " alt="">
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section-2">
+        <div class="section-2-heading">
+            <p>Popular localities in and around Vijayawada NCR</p>
+        </div>
+        <div class="section-2-container">
+            <div class="section-2-items">
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+                <div class="section-2-item">
+                    <p class="item-head">Cannaught Place</p>
+                    <p class="item-subhead">388 Places</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="section-3">
+        <div class="section-3-container">
+            <div class="section-3-img">
+                <img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png" alt="">
+            </div>
+            <div class="section-3-content">
+                <h1>Get code from KL University projects</h1>
+                <p> Made by S.Khowshikk Sharma - S.Tarun Kumar - V.Uma Shankar </p>
+                <div class="section-3-download">
+                    <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+                    <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            S.Khowshikk Sharma - S.Tarun Kumar - V.Uma Shankar
+        </p>
+    </footer>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"2ef7171a795f1b46161a6ddb33002a7ff","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>

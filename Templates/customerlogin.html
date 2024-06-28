@@ -1,0 +1,52 @@
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>|-Login-Form-|</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/customerlogin.css' %}">
+    <link rel="shortcut icon" href="https://www.kluniversity.in/ieee/img/klulogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" action="{% url 'checkclogin' %}">
+        {% csrf_token %}
+        <p align="center" style="color:red">{{msg}}</p>
+        <p align="center" style="color:green">{{msg1}}</p>
+        <div class="title">Customer Login</div>
+        <div class="input-box underline">
+          <input type="text" name="email" placeholder="Enter your Email or Username" required>
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+          <input type="password" name="password" placeholder="Enter your Password" required>
+          <div class="underline"></div>
+        </div>
+        <br>
+        <h6>
+          <a href="{% url 'cforgetpage' %}" class="link">Forgot Your Password?</a>
+        </h6>
+        <div class="input-box button">
+          <input type="submit" value="Login"/><br>
+        </div>
+        <center>
+          <h6>
+            <p class="text--center">Not a member? <a href="{% url 'customersignin' %}">Sign up now</a> </p>
+          </h6>
+        </center>
+      </form>
+    </div>
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"2ef7171a795f1b46161a6ddb33002a7ff","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+  </body>
+</html>

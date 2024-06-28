@@ -1,0 +1,1207 @@
+{% load static %}
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Order food online from India's best food delivery service. Order from
+      restaurants near you
+    </title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="shortcut icon" href="https://www.kluniversity.in/ieee/img/klulogo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+      <link type="text/css" rel="stylesheet" href="{% static 'css/customerhome.css' %}">
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="navbar">
+        <div class="global-nav">
+          <div class="nav">
+            <div class="left">
+              <center>
+              <a href="#home" class="logo">
+                <svg
+                  class="_8pSp-"
+                  viewBox="0 0 300 300"
+                  height="0"
+                  width="12"
+                  fill="#fc8019"
+                >
+
+                  <img class="logo" src="https://www.kluniversity.in/ft/assets/img/Food%20(2).png" alt="">
+
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_19447_66107"
+                      x1="445.629"
+                      y1="63.8626"
+                      x2="160.773"
+                      y2="537.598"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FF993A"></stop>
+                      <stop offset="1" stop-color="#F15700"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              </center>
+              <div class="location-div">
+                <span class="other">Other</span>
+                <span class="location">Bengaluru, Karnataka, India</span>
+                <span class="arrow-down"
+                  ><i class="fa-solid fa-angle-down"></i
+                ></span>
+              </div>
+            </div>
+            <div class="right">
+              <ul class="items">
+                <li>
+                  <div class="nav-item">
+                    <a href="#">
+                      <svg
+                        class="_1GTCc"
+                        viewBox="5 -1 12 25"
+                        height="17"
+                        width="17"
+                        fill="#686b78"
+                      >
+                        <path
+                          d="M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"
+                        ></path>
+                      </svg>
+                      <span>Search</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-item">
+                    <a href="#">
+                      <svg
+                        class="_1GTCc"
+                        viewBox="0 0 32 32"
+                        height="19"
+                        width="19"
+                        fill="#686b78"
+                      >
+                        <path
+                          d="M14.2 2.864l-1.899 1.38c-0.612 0.447-1.35 0.687-2.11 0.687h-2.352c-0.386 0-0.727 0.248-0.845 0.613l-0.728 2.238c-0.235 0.721-0.691 1.348-1.302 1.79l-1.905 1.385c-0.311 0.226-0.442 0.626-0.323 0.991l0.728 2.241c0.232 0.719 0.232 1.492-0.001 2.211l-0.727 2.237c-0.119 0.366 0.011 0.767 0.323 0.994l1.906 1.384c0.61 0.445 1.064 1.070 1.3 1.79l0.728 2.24c0.118 0.365 0.459 0.613 0.844 0.613h2.352c0.759 0 1.497 0.24 2.107 0.685l1.9 1.381c0.313 0.227 0.736 0.227 1.048 0.001l1.9-1.38c0.613-0.447 1.349-0.687 2.11-0.687h2.352c0.384 0 0.726-0.248 0.845-0.615l0.727-2.235c0.233-0.719 0.688-1.346 1.302-1.794l1.904-1.383c0.311-0.226 0.442-0.627 0.323-0.993l-0.728-2.239c-0.232-0.718-0.232-1.49 0.001-2.213l0.727-2.238c0.119-0.364-0.012-0.765-0.324-0.992l-1.901-1.383c-0.614-0.445-1.070-1.074-1.302-1.793l-0.727-2.236c-0.119-0.366-0.461-0.614-0.845-0.614h-2.352c-0.76 0-1.497-0.239-2.107-0.685l-1.903-1.382c-0.313-0.227-0.736-0.226-1.047-0.001zM16.829 0.683l1.907 1.385c0.151 0.11 0.331 0.168 0.521 0.168h2.352c1.551 0 2.927 1 3.408 2.475l0.728 2.241c0.057 0.177 0.169 0.332 0.321 0.442l1.902 1.383c1.258 0.912 1.784 2.531 1.304 4.006l-0.726 2.234c-0.058 0.182-0.058 0.375-0.001 0.552l0.727 2.237c0.48 1.477-0.046 3.096-1.303 4.007l-1.9 1.38c-0.153 0.112-0.266 0.268-0.324 0.447l-0.727 2.237c-0.48 1.477-1.856 2.477-3.408 2.477h-2.352c-0.19 0-0.37 0.058-0.523 0.17l-1.904 1.383c-1.256 0.911-2.956 0.911-4.213-0.001l-1.903-1.384c-0.15-0.11-0.332-0.168-0.521-0.168h-2.352c-1.554 0-2.931-1.001-3.408-2.477l-0.726-2.234c-0.059-0.18-0.173-0.338-0.324-0.448l-1.902-1.381c-1.258-0.912-1.784-2.53-1.304-4.008l0.727-2.235c0.058-0.179 0.058-0.373 0.001-0.551l-0.727-2.236c-0.481-1.476 0.046-3.095 1.302-4.006l1.905-1.385c0.151-0.11 0.264-0.265 0.323-0.444l0.727-2.235c0.478-1.476 1.855-2.477 3.408-2.477h2.352c0.189 0 0.371-0.059 0.523-0.17l1.902-1.383c1.256-0.911 2.956-0.911 4.212 0zM18.967 23.002c-1.907 0-3.453-1.546-3.453-3.453s1.546-3.453 3.453-3.453c1.907 0 3.453 1.546 3.453 3.453s-1.546 3.453-3.453 3.453zM18.967 20.307c0.419 0 0.758-0.339 0.758-0.758s-0.339-0.758-0.758-0.758c-0.419 0-0.758 0.339-0.758 0.758s0.339 0.758 0.758 0.758zM10.545 14.549c-1.907 0-3.453-1.546-3.453-3.453s1.546-3.453 3.453-3.453c1.907 0 3.453 1.546 3.453 3.453s-1.546 3.453-3.453 3.453zM10.545 11.855c0.419 0 0.758-0.339 0.758-0.758s-0.339-0.758-0.758-0.758c-0.419 0-0.758 0.339-0.758 0.758s0.339 0.758 0.758 0.758zM17.78 7.882l2.331 1.352-7.591 13.090-2.331-1.352 7.591-13.090z"
+                        ></path>
+                      </svg>
+                      <span>Offers</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-item">
+                    <a href="#">
+                      <svg
+                        class="_1GTCc"
+                        viewBox="6 -1 12 25"
+                        height="19"
+                        width="19"
+                        fill="#686b78"
+                      >
+                        <path
+                          d="M21.966903,13.2244898 C22.0156989,12.8231523 22.0408163,12.4145094 22.0408163,12 C22.0408163,11.8357822 22.036874,11.6724851 22.029079,11.5101984 L17.8574333,11.5102041 C17.8707569,11.6717062 17.877551,11.8350597 17.877551,12 C17.877551,12.4199029 17.8335181,12.8295214 17.749818,13.2244898 L21.966903,13.2244898 Z M21.5255943,15.1836735 L16.9414724,15.1836735 C15.8950289,16.8045422 14.0728218,17.877551 12,17.877551 C9.92717823,17.877551 8.1049711,16.8045422 7.05852762,15.1836735 L2.47440565,15.1836735 C3.80564362,19.168549 7.56739481,22.0408163 12,22.0408163 C16.4326052,22.0408163 20.1943564,19.168549 21.5255943,15.1836735 Z M21.7400381,9.55102041 C20.6468384,5.18931674 16.7006382,1.95918367 12,1.95918367 C7.2993618,1.95918367 3.3531616,5.18931674 2.25996187,9.55102041 L6.6553883,9.55102041 C7.58404845,7.5276442 9.62792376,6.12244898 12,6.12244898 C14.3720762,6.12244898 16.4159515,7.5276442 17.3446117,9.55102041 L21.7400381,9.55102041 Z M2.03309705,13.2244898 L6.25018203,13.2244898 C6.16648186,12.8295214 6.12244898,12.4199029 6.12244898,12 C6.12244898,11.8350597 6.1292431,11.6717062 6.14256675,11.5102041 L1.97092075,11.5102041 C1.96312595,11.6724851 1.95918367,11.8357822 1.95918367,12 C1.95918367,12.4145094 1.98430112,12.8231523 2.03309705,13.2244898 Z M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M12,15.9183673 C14.1640545,15.9183673 15.9183673,14.1640545 15.9183673,12 C15.9183673,9.83594547 14.1640545,8.08163265 12,8.08163265 C9.83594547,8.08163265 8.08163265,9.83594547 8.08163265,12 C8.08163265,14.1640545 9.83594547,15.9183673 12,15.9183673 Z"
+                        ></path>
+                      </svg>
+                      <span>Help</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-item">
+                    <a href="#">
+                      <svg
+                        class="_1GTCc"
+                        viewBox="6 0 12 24"
+                        height="19"
+                        width="18"
+                        fill="#686b78"
+                      >
+                        <path
+                          d="M11.9923172,11.2463768 C8.81761115,11.2463768 6.24400341,8.72878961 6.24400341,5.62318841 C6.24400341,2.5175872 8.81761115,0 11.9923172,0 C15.1670232,0 17.740631,2.5175872 17.740631,5.62318841 C17.740631,8.72878961 15.1670232,11.2463768 11.9923172,11.2463768 Z M11.9923172,9.27536232 C14.0542397,9.27536232 15.7257581,7.64022836 15.7257581,5.62318841 C15.7257581,3.60614845 14.0542397,1.97101449 11.9923172,1.97101449 C9.93039471,1.97101449 8.25887628,3.60614845 8.25887628,5.62318841 C8.25887628,7.64022836 9.93039471,9.27536232 11.9923172,9.27536232 Z M24,24 L0,24 L1.21786143,19.7101449 L2.38352552,15.6939891 C2.85911209,14.0398226 4.59284263,12.7536232 6.3530098,12.7536232 L17.6316246,12.7536232 C19.3874139,12.7536232 21.1256928,14.0404157 21.6011089,15.6939891 L22.9903494,20.5259906 C23.0204168,20.63057 23.0450458,20.7352884 23.0641579,20.8398867 L24,24 Z M21.1127477,21.3339312 L21.0851024,21.2122487 C21.0772161,21.1630075 21.0658093,21.1120821 21.0507301,21.0596341 L19.6614896,16.2276325 C19.4305871,15.4245164 18.4851476,14.7246377 17.6316246,14.7246377 L6.3530098,14.7246377 C5.4959645,14.7246377 4.55444948,15.4231177 4.32314478,16.2276325 L2.75521062,21.6811594 L2.65068631,22.0289855 L21.3185825,22.0289855 L21.1127477,21.3339312 Z"
+                        ></path>
+                      </svg>
+                      <span>{{uname}}</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-item">
+                    <a href="">
+                      <svg
+                        class="_1GTCc"
+                        viewBox="6 0 12 24"
+                        height="19"
+                        width="18"
+                        fill="#686b78"
+                      >
+                        <path
+                          d="M11.9923172,11.2463768 C8.81761115,11.2463768 6.24400341,8.72878961 6.24400341,5.62318841 C6.24400341,2.5175872 8.81761115,0 11.9923172,0 C15.1670232,0 17.740631,2.5175872 17.740631,5.62318841 C17.740631,8.72878961 15.1670232,11.2463768 11.9923172,11.2463768 Z M11.9923172,9.27536232 C14.0542397,9.27536232 15.7257581,7.64022836 15.7257581,5.62318841 C15.7257581,3.60614845 14.0542397,1.97101449 11.9923172,1.97101449 C9.93039471,1.97101449 8.25887628,3.60614845 8.25887628,5.62318841 C8.25887628,7.64022836 9.93039471,9.27536232 11.9923172,9.27536232 Z M24,24 L0,24 L1.21786143,19.7101449 L2.38352552,15.6939891 C2.85911209,14.0398226 4.59284263,12.7536232 6.3530098,12.7536232 L17.6316246,12.7536232 C19.3874139,12.7536232 21.1256928,14.0404157 21.6011089,15.6939891 L22.9903494,20.5259906 C23.0204168,20.63057 23.0450458,20.7352884 23.0641579,20.8398867 L24,24 Z M21.1127477,21.3339312 L21.0851024,21.2122487 C21.0772161,21.1630075 21.0658093,21.1120821 21.0507301,21.0596341 L19.6614896,16.2276325 C19.4305871,15.4245164 18.4851476,14.7246377 17.6316246,14.7246377 L6.3530098,14.7246377 C5.4959645,14.7246377 4.55444948,15.4231177 4.32314478,16.2276325 L2.75521062,21.6811594 L2.65068631,22.0289855 L21.3185825,22.0289855 L21.1127477,21.3339312 Z"
+                        ></path>
+                      </svg>
+                      <span>Logout</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-item">
+                    <a href="#">
+                      <svg
+                        class="_1GTCc _173fq"
+                        viewBox="-1 0 37 32"
+                        height="20"
+                        width="20"
+                        fill="#60b246"
+                      >
+                        <path
+                          d="M4.438 0l-2.598 5.11-1.84 26.124h34.909l-1.906-26.124-2.597-5.11z"
+                        ></path>
+                      </svg>
+                      <span>Cart</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content-section">
+        <section class="restaurants">
+          <div class="container">
+            <div class="item-bar">
+              <div class="number">1473 restaurants</div>
+              <div class="filters">
+                <div class="relevance">Relevance</div>
+                <div class="delivery-time">Delivery Time</div>
+                <div class="rating">Rating</div>
+                <div class="cost-lh">Cost: Low To High</div>
+                <div class="cost-hl">Cost: High To Low</div>
+              </div>
+            </div>
+            <div class="restaurant-list">
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                >
+                  <div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="data:image/jpeg;base64,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"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Dosa</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>2.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>34 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹50 FOR TWO</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i
+                        ></span>
+                        <span class="offer-text">75% off | Use WELCOME 50</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                >
+                  <div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="data:image/jpeg;base64,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"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Chicken Biriyani</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice\
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>3.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>44 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹350</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i
+                        ></span>
+                        <span class="offer-text">50% off | Use WELCOME 50</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                >
+                  <div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://images.herzindagi.info/image/2021/Sep/chaii-samosa.jpg"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Samosa</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>44 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹70 FOR 6</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i
+                        ></span>
+                        <span class="offer-text">10% off | Use WELCOME 30</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="data:image/jpeg;base64,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"
+                        />
+                      </div>
+
+                      <div class="place-name-div">
+                        <div class="name">Veg Fried Rice</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>3.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>56 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹285 FOR TWO</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">50% off | Use WELCOME50</span>
+                      </div>
+                    </div>
+                   <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQreKsQrrvqgOum5T8szPiSP8gCrjqy9GvOlA&usqp=CAU"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Ham Burger</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating" style="background-color: #48c479">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>20 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹120</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">10% off | Use WELCOME</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://i.pinimg.com/736x/ac/eb/32/aceb32c98aa97de3f661bf7cb225142a.jpg"
+                        />
+                      </div>
+
+                      <div class="place-name-div">
+                        <div class="name">Butter Roti</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>3.4</span>
+                        </div>
+                        <div>•</div>
+                        <div>31 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹165</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">40% off | Use WELCOME 50</span>
+                      </div>
+                    </div>
+                   <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://img.traveltriangle.com/blog/wp-content/uploads/2022/01/Famous-Food-Of-South-India-400x229.jpg"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Masala Dosa</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>3.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>34 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹90</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">10% off | Use WELCOME 10</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://5.imimg.com/data5/GY/FH/HA/SELLER-95942114/biryani-500x500.jpg"
+                        />
+                      </div>
+
+                      <div class="place-name-div">
+                        <div class="name">Veg Biriyani</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.9</span>
+                        </div>
+                        <div>•</div>
+                        <div>22 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹190</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">20% off | Use WELCOME 80</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://cdn.cnn.com/cnnnext/dam/assets/181031191840-01-india-ultimate-food-guide.jpg"
+                        />
+                      </div>
+
+                      <div class="place-name-div">
+                        <div class="name">Masala Wada</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>5.0</span>
+                        </div>
+                        <div>•</div>
+                        <div>54 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹60 FOR TWO</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">20% off | Use WELCOME 30</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://i.pinimg.com/474x/b6/d2/1b/b6d21b9d76cb9c836898cae67fc86a63.jpg"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Sweets Combo</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating" style="background-color: #48c479">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>37 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹532 FOR ONE PACK</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">60% off | Use WELCOME 50</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://images.immediate.co.uk/production/volatile/sites/30/2020/06/White-chocolate-cheesecake-copy-93ec457.jpg?quality=90&fit=700,350"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Deserts Cake</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating" style="background-color: #48c479">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>32 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹134 FOR ONE</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">50% off | Use WELCOME50</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://www.milkmaid.in/sites/default/files/2020-07/Chocolate-Ice-Cream_0.jpg"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Chocolate Ice Cream</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating" style="background-color: #48c479">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>25 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹156 FOR ONE CUP</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">05% off | Use WELCOME 100</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/shaheen_ali/Stove_Top_Grilled__Smoked_Tandoori_Chicken.jpg"
+                        />
+                      </div>
+
+                      <div class="place-name-div">
+                        <div class="name">Tandoori Chicken</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>2.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>14 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹245 FOR FIVE</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">60% off | Use WELCOME 30</span>
+                      </div>
+                    </div>
+                   <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://thegastronomictale.files.wordpress.com/2019/07/xsg2adhwsmezmjg2tmyj6a_thumb_2f8.jpg"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Poori</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating" style="background-color: #48c479">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.8</span>
+                        </div>
+                        <div>•</div>
+                        <div>38 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹90 FOR TWO</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">30% off | Use WELCOME 10</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://i.ytimg.com/vi/DxuCLiHHNFM/maxresdefault.jpg"
+                        />
+                      </div>
+                      <div
+                        class="status"
+                        style="
+                          background: rgb(58, 60, 65);
+                          color: rgb(255, 255, 255);
+                          border-color: rgb(30, 32, 35) transparent;
+                        "
+                      >
+                        <div class="status-title">Promoted</div>
+                      </div>
+                      <div class="place-name-div">
+                        <div class="name">Ultimate Meals</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating" style="background-color: #48c479">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.9</span>
+                        </div>
+                        <div>•</div>
+                        <div>67 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹400</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">40% off | Use WELCOME 100</span>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="place">
+                <a
+                  href="/restaurants/waffld-domlur-bangalore-303446"
+                  class="place-link"
+                  ><div class="list-item">
+                    <div class="item-content">
+                      <div class="top-img">
+                        <img
+                          class="_2tuBw _12_oN"
+                          alt="Waffl'd"
+                          width="254"
+                          height="160"
+                          src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/blogs/indian-food-nutrition.jpg"
+                        />
+                      </div>
+
+                      <div class="place-name-div">
+                        <div class="name">Idlie</div>
+                        <div
+                          class="food-items"
+                          title="Bakery, Desserts, Beverages, Combo, European, Ice Cream, Juices, Waffle, Sweets"
+                        >
+                          Bakery, Desserts, Beverages, Combo, European, Ice
+                          Cream, Juices, Waffle, Sweets
+                        </div>
+                      </div>
+                      <div class="info-div">
+                        <div class="rating">
+                          <span class="icon-star"
+                            ><i class="fa-solid fa-star"></i></span
+                          ><span>4.0</span>
+                        </div>
+                        <div>•</div>
+                        <div>15 MINS</div>
+                        <div>•</div>
+                        <div class="price">₹50 FOR TWO</div>
+                      </div>
+                      <div class="offer-div">
+                        <span class="icon-offer-filled"
+                          ><i class="fa-solid fa-tags"></i></span
+                        ><span class="offer-text">10% off | Use WELCOME 10</span>
+                      </div>
+                    </div>
+                   <div class="flex">
+                      <div class="quick-view">
+                        <a href="#"><span role="button" aria-label="Open" class="view-btn">Add to Cart</span> </a>
+                        <a href="{% url 'npaymentpage' %}"><span role="button" aria-label="Open" class="view-btn">Order Now</span> </a>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-1">
+          <div class="section-1-item">
+            <div class="items-details"><p>Order Food Online</p></div>
+              <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;," alt="">
+            </div>
+            <div class="section-1-item">
+              <div class="items-details"><p>Dining Out</p></div>
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;," alt="">
+              </div>
+            <div class="section-1-item">
+              <div class="items-details"><p>Nightlife & Club</p></div>
+                <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;," alt="">
+            </div>
+          </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="points">
+            COMPANY
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="#">About us</a></li>
+              <li class="footer-li"><a href="#">Team</a></li>
+              <li class="footer-li"><a href="#">Careers</a></li>
+              <li class="footer-li"><a href="#">KL Blog</a></li>
+              <li class="footer-li"><a href="#">Bug Bounty</a></li>
+              <li class="footer-li"><a href="#">KL Super</a></li>
+              <li class="footer-li"><a href="#">KL Corporate</a></li>
+              <li class="footer-li"><a href="#">KL Instamart</a></li>
+            </ul>
+          </div>
+          <div class="points">
+            CONTACT
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="#">Help & Support</a></li>
+              <li class="footer-li"><a href="#">Partner with us</a></li>
+              <li class="footer-li"><a href="#">Ride with us</a></li>
+            </ul>
+          </div>
+          <div class="points">
+            LEGAL
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="#">Terms & Conditions</a></li>
+              <li class="footer-li"><a href="#">Refund & Cancellation</a></li>
+              <li class="footer-li"><a href="#">Privacy Policy</a></li>
+              <li class="footer-li"><a href="#">Cookie Policy</a></li>
+              <li class="footer-li"><a href="#">Offer Terms</a></li>
+              <li class="footer-li"><a href="#">Phishing & Fraud</a></li>
+            </ul>
+          </div>
+          <div class="points">
+            <img
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
+              height="54"
+            />
+            <img
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
+              height="54"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script type="text/javascript">
+    (function(d, m){
+      var kommunicateSettings =
+            {"appId":"2ef7171a795f1b46161a6ddb33002a7ff","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+  </body>
+</html>
